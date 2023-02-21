@@ -1,0 +1,9 @@
+#Create a function which answers the question "Are you playing banjo?".
+#If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+def are_you_playing_banjo(name):
+    name_list = list(name)
+    if name_list[0] == "r" or name_list[0] == "R":
+        return name + " plays banjo" 
+    else:
+        return name + " does not play banjo"
