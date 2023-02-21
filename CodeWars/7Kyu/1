@@ -1,0 +1,10 @@
+#Create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out
+
+def filter_list(l):
+    new_list = []
+    for number in l:
+        if type(number) == int:
+            new_list.append(number)
+        else:
+            continue
+    return new_list
