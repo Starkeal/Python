@@ -1,0 +1,15 @@
+#Complete the solution so that it reverses the string passed into it.
+
+def solution(string):
+
+    string_array = list(string)
+    print(string_array)
+    length = len(string_array) - 1
+    print(length)
+    new_string = ""
+
+    while length >= 0:
+        new_string = new_string + string_array[length]
+        length = length - 1
+
+    return new_string
