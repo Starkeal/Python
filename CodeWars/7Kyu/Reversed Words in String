@@ -1,0 +1,30 @@
+Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+
+
+def reverse_words(text):
+
+    array = list(text)
+    length = len(array) - 1
+    print(length)
+    index = 0
+    string = ""
+    final = ""
+        
+    while index <= length:
+        if array[index] == array[-1] and length == index:
+            string += str(array[-1])
+            final += string[::-1]
+            break
+
+        elif array[index] == " ":
+            final += string[::-1] + " "
+            index += 1
+            string = ""
+        
+        else:
+            string += str(array[index])
+            index += 1
+
+    return final
