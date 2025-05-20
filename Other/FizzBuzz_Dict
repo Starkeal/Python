@@ -1,0 +1,14 @@
+fizz_buzz = {}
+
+for i in range(0,101):
+    if i % 5 == 0 and i % 3 == 0:
+        fizz_buzz[i] = "FizzBuzz"
+    elif i % 5 == 0:
+        fizz_buzz[i] = "Buzz"
+    elif i % 3 == 0:
+        fizz_buzz[i] = "Fizz"
+    else:
+        fizz_buzz[i] = ""
+
+for key in fizz_buzz:
+    print(f"{key}:{fizz_buzz[key]}")
